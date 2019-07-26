@@ -250,6 +250,7 @@ class PlayerFragment : BaseMvRxFragment() {
                 }
         ))
 
+        animationView.removeAllUpdateListeners()
         animationView.addAnimatorUpdateListener {
             currentFrameView.text = updateFramesAndDurationLabel(animationView)
 
